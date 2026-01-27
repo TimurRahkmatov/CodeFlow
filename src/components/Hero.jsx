@@ -1,5 +1,8 @@
 import { ChevronDown } from "lucide-react";
 import { useEffect, useState } from "react";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { CodeExamples } from "../data/codeExamples";
+import { nightOwl } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 const Hero = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -64,8 +67,27 @@ const Hero = () => {
                   Navbar.jsx
                 </button>
               </div>
+              {/* Code Content */}
+              <div className="relative overflow-hidden flex-grow">
+                <SyntaxHighlighter
+                  language="javascript"
+                  style={nightOwl}
+                  customStyle={{
+                    margin: 0,
+                    borderRadius: "8px",
+                    fontSize: "11px",
+                    lineHeight: "1.4",
+                    height: "100%",
+                    border: "1px solid #3c3c3c"
+
+                  }}
+                >
+                  {CodeExamples[activeTab]}
+                </SyntaxHighlighter>
+              </div>
             </div>
           </div>
+          {/* Floating Card */}
         </div>
       </div>
     </section>

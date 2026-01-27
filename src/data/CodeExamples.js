@@ -1,6 +1,6 @@
 export const CodeExamples = {
     "App.jsx" : `
-    import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Pricing from "./components/Pricing";
@@ -21,11 +21,8 @@ function App() {
 export default App; 
     `,
     "Hero.jsx" : `
-    import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import Pricing from "./components/Pricing";
-import Testimonials from "./components/Testimonials";
 
 function Hero() {
   return (
@@ -42,10 +39,7 @@ function Hero() {
 export default Hero; 
     `,
     "Navbar.jsx" : `
-    import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import Pricing from "./components/Pricing";
+import Footer from "./components/Footer";
 import Testimonials from "./components/Testimonials";
 
 function Navbar() {
