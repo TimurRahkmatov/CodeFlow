@@ -13,7 +13,6 @@ function App() {
       <Hero />
       <Testimonials />
       <Pricing />
-      <Footer />
     </div>
   );
 }
@@ -54,8 +53,7 @@ function Navbar() {
   );
 }
 
-export default Navbar; 
-    `
+export default Navbar; `
 };
 
 
